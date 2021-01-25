@@ -1,0 +1,66 @@
+<?php
+  //檢查 cookie 中的 passed 變數是否等於 TRUE
+  $passed = $_COOKIE["passed"];
+	
+  /*  如果 cookie 中的 passed 變數不等於 TRUE
+      表示尚未登入網站，將使用者導向首頁 index.htm	*/
+  if ($passed != "TRUE")
+  {
+    header("location:login.html");
+    exit();
+  }
+?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<!-- TemplateBeginEditable name="doctitle" -->
+<title>無標題文件</title>
+<!-- TemplateEndEditable -->
+<!-- TemplateBeginEditable name="head" -->
+<!-- TemplateEndEditable -->
+</head>
+
+<body background="../image/5372533847_eb3cf5815e_m.jpg">
+<div align="center">
+  <table width="1288" border="0" cellspacing="1" cellpadding="15">
+    <tr>
+      <td colspan="2" align="center"><p><img src="../image/1.png" width="1200" height="300" /></p>
+      <p><img src="../image/root.png" width="1200" height="50" /></p></td>
+    </tr>
+    <tr>
+      <td width="253" height="351"><p><img src="../image/buttons/s.PNG" width="427" height="137" /></p>
+        <p><img src="../image/buttons/t.PNG" width="428" height="137" /></p>
+        <p><img src="../image/buttons/v.PNG" width="428" height="136" /></p>
+      <p><img src="../image/buttons/m.PNG" width="427" height="136" /></p></td>
+      <td width="972"><!-- TemplateBeginEditable name="EditRegion1" -->
+        <p>&nbsp;</p>
+        <p>&nbsp;</p>
+        <p>&nbsp;</p>
+        <p>&nbsp;</p>
+        <p>&nbsp;</p>
+        <p>&nbsp;</p>
+        <p>&nbsp;</p>
+        <p>&nbsp;</p>
+        <p>&nbsp;</p>
+        <p>&nbsp;</p>
+        <p>&nbsp;</p>
+        <p>&nbsp;</p>
+        <p>&nbsp;</p>
+        <p>&nbsp;</p>
+        <p>&nbsp;</p>
+        <p>&nbsp;</p>
+      <!-- TemplateEndEditable --></td>
+    </tr>
+    <tr>
+      <td height="138" colspan="2"><div align="center">Copyright© 2016 NTUE
+          <p>資訊科學系 智慧農莊研發團隊</p>
+      </div></td>
+    </tr>
+  </table>
+</div>
+<div align="center"></div>
+<div align="center"></div>
+<p align="center">&nbsp;</p>
+</body>
+</html>

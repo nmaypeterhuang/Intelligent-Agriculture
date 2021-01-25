@@ -1,0 +1,97 @@
+<?php
+  //檢查 cookie 中的 passed 變數是否等於 TRUE
+  $passed = $_COOKIE["passed"];
+	
+  /*  如果 cookie 中的 passed 變數不等於 TRUE
+      表示尚未登入網站，將使用者導向首頁 index.htm	*/
+  if ($passed != "TRUE")
+  {
+    header("location:login.html");
+    exit();
+  }
+?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><!-- InstanceBegin template="/Templates/index2.dwt" codeOutsideHTMLIsLocked="false" -->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<!-- InstanceBeginEditable name="doctitle" -->
+<!--<link rel=stylesheet type="text/css" href="css1.css">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <title>專題</title>
+  <!-- webduino -->
+
+  <title>歡迎來到智慧農莊</title>
+  <script type="text/javascript">
+      function check_data()
+      {
+        if (document.myForm.account.value.length == 0)
+          alert("帳號欄位不可以空白哦！");
+        else if (document.myForm.password.value.length == 0)
+          alert("密碼欄位不可以空白哦！");
+        else 
+          myForm.submit();
+      }
+    </script>
+  <!-- webduino -->
+  
+<!-- InstanceEndEditable -->
+<!-- InstanceBeginEditable name="head" -->
+<!-- InstanceEndEditable -->
+</head>
+
+<body background="image/5372533847_eb3cf5815e_m.jpg">
+<div align="center">
+  <table width="1288" border="0" cellspacing="1" cellpadding="15">
+    <tr>
+      <td colspan="2" align="center"><p><img src="image/1.png" width="1200" height="300" /></p>
+      <p><img src="image/root.png" width="1200" height="50" /></p></td>
+    </tr>
+    <tr>
+      <td width="253" height="351"><p><img src="image/buttons/s.PNG" width="427" height="137" /></p>
+        <p><img src="image/buttons/t.PNG" width="428" height="137" /></p>
+        <p><img src="image/buttons/v.PNG" width="428" height="136" /></p>
+      <p><img src="image/buttons/m.PNG" width="427" height="136" /></p></td>
+      <td width="972"><!-- InstanceBeginEditable name="EditRegion1" -->
+        <p>&nbsp;</p>
+         
+    <form action="weblogin/checkpwd.php" method="post" name="myForm">
+      <table width="40%" align="center">
+        <tr> 
+          <td align="center"> 
+            <font color="#3333FF">帳號：</font> 
+            <input name="account" type="text" size="15">
+          </td>
+        </tr>
+        <tr> 
+          <td align="center"> 
+            <font color="#3333FF">密碼：</font> 
+            <input name="password" type="password" size="15">
+          </td>
+        </tr>
+        <tr>
+          <td align="center"> 
+            <input type="button" value="登入" onClick="check_data()">      　 
+            <input type="reset" value="重填">
+          </td>
+        </tr>
+      </table>
+    </form>
+    <p align="center">
+      <a href="weblogin/join.htm">加入會員</a>　
+      <a href="weblogin/search_pwd.htm">查詢密碼</a></p>
+        
+      <!-- InstanceEndEditable --></td>
+    </tr>
+    <tr>
+      <td height="138" colspan="2"><div align="center">Copyright© 2016 NTUE
+          <p>資訊科學系 智慧農莊研發團隊</p>
+      </div></td>
+    </tr>
+  </table>
+</div>
+<div align="center"></div>
+<div align="center"></div>
+<p align="center">&nbsp;</p>
+</body>
+<!-- InstanceEnd --></html>
